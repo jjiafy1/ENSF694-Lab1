@@ -1,0 +1,24 @@
+Q1:
+See Execution Screenshot #1 and #2 for program run.
+
+Summary of program execution:
+1. User is prompted for number of elements in the array (array size)
+2. An array of size based on user prompt is constructed
+3. User is prompted sequentially for all inputs to the array and the array is populated
+4. User is prompted for key
+5. User input array is sorted into ascending order using Arrays.sort()
+6. User input array and key are passed to the constructor for object, linSearch, containing all the search methods
+7. Each search method is called from the linSearch object. If key is found, return index at which the key is at and calculate the run time
+
+Q2:
+In general, the linear search performed better/faster than the interpolation search.
+This is probably because the interpolation search has more operations to go through per iteration and the inputted array is fairly small.
+Also, the array element values are not uniformly distributed in the execution screenshot example.
+Thus, more time is consumed per iteration of the interpolation search.
+
+Q3:
+I've improved the linear search algorithm by implementing a "converging" linear search.
+So for each iteration of the search loop, the array is being searched from the other end in addition to from the beginning.
+This improves the running time mostly for cases where the key is located far from the beginning and middle of the array 
+(closer to, or at, the worst-case scenario for the original linear search function).
+The improvement is as much as 233% as shown in Execution Screenshot #1 where the user entered key is the last element in the sorted array.
