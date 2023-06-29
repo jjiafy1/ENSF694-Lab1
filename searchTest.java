@@ -71,6 +71,7 @@ public class searchTest {
 			System.out.println("Runtime: " + linear.time);
 		}
 		
+		//Find the index at which the key appears using improved linear search and print out the index
 		keyIndex = linear.improvedLinSearch();
 		System.out.println("**Improved Linear Search**");
 		if (keyIndex == -1)
